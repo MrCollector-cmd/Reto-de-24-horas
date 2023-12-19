@@ -1,0 +1,215 @@
+.logo,.menu-h{
+    position: absolute;
+    z-index: 200;
+}
+.menu-h{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 3rem;
+    margin: .5rem 2rem;
+    z-index: 300;
+}
+
+header{
+    position: relative;
+    top: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image:linear-gradient(to top, #06696692, #02827c93, #009b9192, #00b5a9a2, #00d0bf86),url('../img/elem/bg2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--color3);
+}
+#mainInicio{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    'inf inf inf inf-img'
+    'inf-img2 inf2 inf2 inf2';
+    background-color: var(--color10);
+    height: 100%;
+    width: 100vw;
+}
+.infNosotros{
+    grid-area: inf;
+    background-color: var(--color8);
+    padding: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.dondeEstamos{
+    grid-area: inf2;
+    background-color: var(--color8);
+    justify-self: flex-end;
+    padding: 2rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.infNosotros p,.dondeEstamos p{
+    padding-top: 1rem;
+    line-height: 1.4rem;
+}
+
+.infNosotros-img{
+    justify-content: center;
+    align-content: center;
+    grid-area: inf-img;
+    margin: 1.5rem 3rem;
+}
+.dondeEstamos-img{
+    justify-content: center;
+    align-content: center;
+    grid-area: inf-img2;
+    margin: 1.5rem 3rem  ;
+
+}
+.infNosotros-img img,.dondeEstamos-img iframe{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 20px;
+}
+@media screen and (max-width: 780px) {
+    .sep .menu-h{
+        display: flex;
+        cursor: pointer;
+        z-index: 200;
+    }
+    header h1 {
+        margin: 0 1rem;
+        text-align: center;
+    }
+    header h2 {
+        margin: 0 .5rem;
+        text-align: center;
+    }
+    .nav-log{margin: 0;
+    display: flex;
+justify-content: center;}
+    #mainInicio{
+        grid-template-areas: 
+        "inf-img"
+        "inf"
+        "inf-img2"
+        "inf2"
+        ;
+    }
+    .infNosotros-img{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    .infNosotros{
+
+        margin: 1rem 2rem;
+        border-radius: 20px;
+    }
+    .dondeEstamos-img{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    .dondeEstamos{
+        margin: 1rem 2rem;
+        border-radius: 20px;
+    }
+    .infNosotros-img img,.dondeEstamos-img iframe{
+        width: 25rem;
+        height: 20rem;
+        border-radius: 20px;
+    }
+    .sep{
+        background: none;
+        backdrop-filter:none;
+        box-shadow: none;
+    }
+    .nav{
+        margin: 0;
+        transform: translateX(-100rem);
+        position: absolute;
+        top: 0;
+        right: inherit;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,.2);
+    backdrop-filter: blur(0.4rem);
+        width: 100vw;
+        height: 100vh;
+        z-index: 200;
+    }
+    .sep nav ul{
+        flex-direction: column;
+    }
+    .ordenNav{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(0);
+        transition: transform .3s;
+        right: inherit;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,.2);
+    backdrop-filter: blur(0.4rem);
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .ordenNav ul {
+        align-items: center;
+        justify-content: center;
+    }
+    .ordenNav ul li{
+        align-items: center;
+        margin: 1rem 0;
+        font-size: 1.7rem;
+    }
+    .bodyOrden{
+        overflow: hidden;
+    }
+    /* .orden,.orden nav,.orden nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    nav{
+       display: none;
+    }
+    .orden nav{
+        top: 0;
+        display: flex;
+
+    }
+    nav{
+        position: absolute;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .orden ul{
+        font-size: 2rem;
+        flex-direction: column;
+    }
+    .orden ul li{
+        margin: 2rem 0;
+    }
+    .ordenSep{
+        height: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    } */
+  }

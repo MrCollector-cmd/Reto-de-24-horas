@@ -1,0 +1,382 @@
+.sep .menu-h{
+    display: none;
+    justify-self: center;
+    align-self: flex-end;
+    position: relative;
+    right: 0;
+    width: 3rem;
+    margin: .5rem 2rem;
+}
+#mainProductos{
+width: 100vw;
+height: 100vh;
+background-color: var(--color10);
+overflow: hidden;
+}
+.mercado{
+    margin: 4rem 0;
+    padding: 0 0 4rem 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+.mercado_cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+}
+.card{ 
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    width:20rem;
+    height: 20rem;
+    margin: 1rem 2rem;
+    border-radius: 20px;
+}
+.card img{
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20px;
+}
+.card .inf_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    background-color:  rgba(6, 105, 101,.8);
+    padding: 1rem;
+    border-radius: 20px ;
+}
+.button{
+    border: none;
+    font-size: 1rem;
+    width: 10rem;
+    font-weight: bold;
+}
+/* .inf_card button,.button{
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background: var(--color6);
+    color: var(--color10);
+}
+.inf_card button:hover,.button{
+    background: var(--color3);
+    color: var(--color11);
+    border-radius: 10px;
+}
+.inf_card button:active,.button{
+    background: var(--color8);
+    color: var(--color2);
+    border-radius: 10px;
+} */
+.inf_card .precio{
+    align-self: center;
+    font-weight: bold;
+    padding: .5rem;
+}
+.inf_card h3{
+    align-self: center;
+    padding: .5rem;
+}
+.conteinerInfo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.441);
+    z-index: 100;
+}
+.prodInfo{
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--color10);
+    border-radius: 20px;
+}
+.prodInfo img{
+    height: 25rem;
+    width: 30rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.infContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+}
+.infContent h3{
+    padding: .5rem;
+    margin: 1rem 0;
+    width: 75%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.9rem;
+}
+.infContent h4{
+    padding: .5rem;
+    margin: .5rem 0;
+    background-color: var(--color8);
+    width: 85%;
+    border-radius: 20px;
+    text-align: center;
+}
+.infContent p{
+    margin: 1rem;
+}
+.infContent .precio{
+    width: 30%;
+}
+.infContent button{
+    border: none;
+    background-color: var(--color8);
+    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--color2);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+.options_select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 1rem 0;
+}
+.options_select button,.options_select button:hover,.options_select button:active{
+    border-radius: inherit;
+    width: 13rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.options_select input{
+    border: none;
+    padding: .875rem 1.1rem;
+    width: 3rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2rem;
+    background-color: var(--color9);
+    z-index: 100;
+}
+.options_select img{
+    position: absolute;
+    width:2rem;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: inherit;
+    background-color: var(--color7);
+    cursor: pointer;
+    z-index: 0;
+}
+.options_select .flechaArriba{
+    transform: rotate(180deg);
+    right: .6rem;
+    top: -.4rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.options_select .flechaArriba:hover{
+    transform:  scale(1.1) rotate(180deg);
+    transition: transform 100ms;
+}
+.options_select .flechaAbajo{
+    bottom: -.4rem;
+    right: .6rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.options_select .flechaAbajo:hover{
+    transform: scale(1.1);
+    transition: transform 100ms;
+}
+@media screen and (max-width: 780px) {
+
+
+
+    .prodInfo{
+        width: 100%;
+    }
+
+
+    .prodInfo .img{
+        height: 15rem;
+        width: 20rem;
+        padding: 0 .5rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .infContent{
+        font-size: .8rem;
+        width: 20rem;
+    }
+    .options_select button,.options_select button:hover,.options_select button:active{
+        border-radius: inherit;
+        width: 10rem;
+        font-size: .95rem;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+
+    /* ''''''''''''''''''''''''''''''''''''''''''''''' */
+    .sep .menu-h{
+        display: flex;
+        cursor: pointer;
+        z-index: 200;
+    }
+    .nav-log{margin: 0;
+    display: flex;
+justify-content: center;}
+    #mainInicio{
+        grid-template-areas: 
+        "inf-img"
+        "inf"
+        "inf-img2"
+        "inf2"
+        ;
+    }
+    .infNosotros-img{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .infNosotros{
+
+        margin: 1rem 2rem;
+        border-radius: 20px;
+    }
+    .dondeEstamos-img{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .dondeEstamos{
+        margin: 1rem 2rem;
+        border-radius: 20px;
+    }
+    .infNosotros-img img,.dondeEstamos-img iframe{
+        width: 25rem;
+        height: 20rem;
+        border-radius: 20px;
+    }
+    .sep{
+        background: none;
+        backdrop-filter:none;
+        box-shadow: none;
+    }
+    nav{
+        margin: 0;
+        transform: translateX(-100rem);
+        position: absolute;
+        top: 0;
+        right: inherit;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,.2);
+    backdrop-filter: blur(0.4rem);
+        width: 100vw;
+        height: 100vh;
+    }
+    .sep nav ul{
+        flex-direction: column;
+    }
+    .ordenNav{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(0);
+        transition: transform 1s;
+        right: inherit;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,.2);
+    backdrop-filter: blur(0.4rem);
+        width: 100vw;
+        height: 100vh;
+    }
+    .ordenNav ul {
+        align-items: center;
+        justify-content: center;
+    }
+    .ordenNav ul li{
+        align-items: center;
+        margin: 1rem 0;
+        font-size: 1.7rem;
+    }
+    .bodyOrden{
+        transition: overflow 1s;
+        overflow: hidden;
+        
+    }
+    /* .orden,.orden nav,.orden nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    nav{
+       display: none;
+    }
+    .orden nav{
+        top: 0;
+        display: flex;
+
+    }
+    nav{
+        position: absolute;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .orden ul{
+        font-size: 2rem;
+        flex-direction: column;
+    }
+    .orden ul li{
+        margin: 2rem 0;
+    }
+    .ordenSep{
+        height: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    } */
+  }
+  @media screen and (max-width: 540px){
+        .options_select{
+            width: 10rem;
+        }
+        .options_select button,.options_select button:hover,.options_select button:active{
+            border-radius: inherit;
+            width: 10rem;
+            font-size: .599rem;
+            height: 3.2rem;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .options_select input{
+            border: none;
+            padding: .875rem 1.1rem;
+            width: 3rem;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 1.2rem;
+            background-color: var(--color9);
+            z-index: 100;
+        }
+  }

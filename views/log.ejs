@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include(head)%>
+</head>
+<body>
+    <main class="loged">
+        <div class="container-forms">
+            <form action="/login" method="post" class="form-login">
+                <input type="text" name="user" placeholder="User">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Enviar</button>
+            </form>
+            <form action="/register" method="post" class="form-register">
+                <input type="text" name="nombre" placeholder="Name">
+                <input type="text" name="user" placeholder="User">
+                <input type="text" name="celular" placeholder="Phone number">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="tap right">
+                <div class="inf-tap">
+                    <h1>Hola, bienvenido</h1>
+                    <h2>Logueate y juguemos a hacer las compreas</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%- include(footer)%>
+    <script type="module" src="js/fluid/log.js"></script>
+</body>
+</html>

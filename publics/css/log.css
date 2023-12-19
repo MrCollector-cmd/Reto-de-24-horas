@@ -1,0 +1,165 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.loged{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    background-color: var(--color9);
+}
+.container-forms{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.container-forms form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color7);
+    height: 90%;
+    width: 45vw;
+}
+.container-forms form button{
+    align-self: center;
+    justify-self: center;
+    border: none;
+    outline: none;
+    background-color: var(--color6);
+    color:var(--color10);
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 6rem;
+    padding: .5rem;
+    margin: .5rem;
+    cursor: pointer;
+}
+.container-forms form button:hover{
+    background-color: var(--color4);
+    color: var(--color10);
+}
+.container-forms form button:active{
+    background-color: var(--color4);
+    color: var(--color10);
+}
+.container-forms form input{
+    align-self: center;
+    justify-self: center;
+    background-color: transparent;
+    border: none;
+    color: var(--color10);
+    border-bottom: 1px solid var(--color10);
+    padding: .5rem;
+    margin: .5rem;
+    width: 15rem;
+}
+.form-register{
+    margin: 2rem 2rem 2rem 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-login{
+    margin: 2rem 0 2rem 2rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container-forms .tap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    align-self: center;
+    background-image: linear-gradient(to top, #0a5753, #09625e, #076e68, #047973, #00857e);
+    border-radius: 20px;
+    width: 45vw;
+    height: 90%;
+    transition: right 1s ease-in-out;
+}
+.inf-tap h1{
+    padding: .5rem .5rem;
+    font-size: 4rem;
+    text-align: center;
+}
+.inf-tap h2{
+    padding: .5rem .5rem;
+}
+.left{
+    right:50vw;
+}
+.right{
+    right: 5vw;
+}
+@media screen and (max-width: 770px){
+    .container-forms form{
+        height: 80%;
+        width: 100vw;
+    }
+    .container-forms .tap{
+        height: 80%;
+        width: 45vw;
+    }
+    .right{
+        right: 4%;
+    }
+    .left{
+        right:51%;
+    }
+    .inf-tap h1{
+        padding: .5rem .5rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .inf-tap h2{
+        padding: .5rem 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .container-forms form input{
+        padding: 1rem;
+        margin: .5rem;
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 580px){
+    .container-forms form{
+        height: 70%;
+        width: 100%;
+    }
+    .container-forms .tap{
+        height: 70%;
+        width: 50vw;
+    }
+    .right{
+        right: 1%;
+    }
+    .left{
+        right:50%;
+    }
+    .inf-tap h1{
+        padding: .5rem .5rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .inf-tap h2{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .container-forms form input{
+        padding: .5rem;
+        margin: .5rem;
+        width: 10rem;
+    }
+}

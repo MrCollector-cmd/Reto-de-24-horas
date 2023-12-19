@@ -1,0 +1,211 @@
+#mainCarrito{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color10);
+    overflow: hidden;
+}
+.carrito{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    overflow-y: scroll;
+}
+.carrito_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--color9);
+    border-radius: 20px;
+    margin: 2rem 0;
+    padding: 0 1rem 0 0;
+}
+.carrito_item img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.infItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.infItem div{
+    padding: 1.5rem;
+    width: 12rem;
+}
+.infItem div h3{
+    text-align: center;
+    background-color: var(--color8);
+    padding: .4rem .7rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.nombreItem h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.2rem;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.infItem div h4{
+    text-align: center;
+    background-color: var(--color8);
+    padding: .4rem 1rem;    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.seleccion{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0 ;
+}
+.seleccion button,.seleccion button:hover,.seleccion button:active{
+    border-radius: inherit;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.seleccion h3{
+    padding:.86rem  1rem;
+    background-color: var(--color7);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.disable{
+    display: none;
+}
+@media screen and (max-width: 930px){
+    .carrito_item img{
+        height: 8rem;
+        width: 8rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .infItem div{
+        padding: 1.5rem;
+        width: 10rem;
+        font-size: .8rem;
+    }
+    .infItem div h3{
+        padding: .4rem .7rem;
+    }
+    .nombreItem h3{
+        height: 4.2rem;
+    }
+    .infItem div h4{
+        padding: .4rem 1rem;    
+    }
+}
+@media screen and (max-width: 800px){
+    .carrito_item img{
+        height: 8rem;
+        width: 8rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .infItem div{
+        padding: 1.5rem;
+        width: 25%;
+        font-size: .8rem;
+    }
+    .infItem div h3{
+        padding: .4rem .7rem;
+    }
+    .nombreItem h3{
+        height: 4.2rem;
+    }
+    .infItem div h4{
+        padding: .4rem 1rem;    
+    }
+}
+@media screen and (max-width: 720px){
+    .carrito_item img{
+        height: 8rem;
+        width: 8rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .infItem div{
+        padding: .5rem;
+        width: 25%;
+        font-size: .8rem;
+    }
+    .infItem div h3{
+        padding: .4rem .7rem;
+    }
+    .nombreItem h3{
+        height: 4.2rem;
+    }
+    .infItem div h4{
+        padding: .4rem 1rem;    
+    }
+    .infItem button{
+       width: 6rem;
+    }
+}
+@media screen and (max-width: 510px){
+    .carrito_item img{
+        height: 7rem;
+        width: 7rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .infItem div{
+        padding: .1rem;
+        width: 25%;
+        font-size: .8rem;
+    }
+    .infItem div h3{
+        padding: .1rem .7rem;
+    }
+    .nombreItem h3{
+        height: 3.6rem;
+    }
+    .infItem div h4{
+        padding: .4rem 1rem;    
+    }
+    .infItem button{
+       width: 6rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .carrito_item img{
+        height: 6rem;
+        width: 6rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .infItem div{
+        width: 24%;
+        font-size: .5rem;
+    }
+    .infItem div h3{
+        padding: .2rem .6rem;
+    }
+    .nombreItem h3{
+        height: 2.6rem;
+    }
+    .infItem div h4{
+        padding: .4rem 1rem;    
+    }
+    .infItem button{
+       width: 6rem;
+       font-size: .5rem;
+    }
+    .seleccion .button{
+
+        font-size: .6rem;
+    }
+    .seleccion h3{
+    
+        font-size: .8rem;
+    }
+}

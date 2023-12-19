@@ -1,0 +1,110 @@
+[
+    {   
+        "nombre":"Remera Blanca",
+        "categoria":"remera",
+        "precio":"1000",
+        "descripcion":"Remera blanca, lisa, ideal para el verano.",
+        "stock":"10",
+        "img":"img/remeras/remera1.jpg",
+        "id_prod":"remera-blanca"
+    },
+    {   
+        "nombre":"Remera deportiva",
+        "categoria":"remera",
+        "precio":"2000",
+        "descripcion":"Remera deportiva, con logo, color celeste.",
+        "stock":"10",
+        "img":"img/remeras/remera2.jpg",
+        "id_prod":"remera-deportiva"
+    },
+    {   
+        "nombre":"Remera Negra",
+        "categoria":"remera",
+        "precio":"3000",
+        "descripcion":"Remera negra, lisa, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/remeras/remera3.jpg",
+        "id_prod":"remera-negra"
+    },
+    {   
+        "nombre":"Remera Amarilla",
+        "categoria":"remera",
+        "precio":"4000",
+        "descripcion":"Remera amarilla, con dibujo de numero 5, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/remeras/remera4.jpg",
+        "id_prod":"remera-amarilla"
+    },
+    {   
+        "nombre":"Buso la Nasa",
+        "categoria":"buso",
+        "precio":"1000",
+        "descripcion":"Buso negro, logo de la nasa, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/busos/buso1.jpg",
+        "id_prod":"buso-naza"
+    },
+    {   
+        "nombre":"Buso Chicago",
+        "categoria":"buso",
+        "precio":"2000",
+        "descripcion":"Buso negro, con logo de chicago, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/busos/buso2.jpg",
+        "id_prod":"buso-chicago"
+    },
+    {   
+        "nombre":"Buso Cardenal",
+        "categoria":"buso",
+        "precio":"3000",
+        "descripcion":"Remera negra, logo de flechas, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/busos/buso3.jpg",
+        "id_prod":"buso-cardenal"
+    },
+    {   
+        "nombre":"Buso Society",
+        "categoria":"buso",
+        "precio":"4000",
+        "descripcion":"Buso blanco, con logo de calaberas, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/busos/buso4.jpg",
+        "id_prod":"buso-society"
+    },
+    {   
+        "nombre":"Campera con capucha",
+        "categoria":"chaqueta",
+        "precio":"1000",
+        "descripcion":"Chaqueta negra, de cuero, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/chaquetas/chaqueta1.jpeg",
+        "id_prod":"chaqueta-capucha"
+    },
+    {   
+        "nombre":"Campera Hombrera",
+        "categoria":"chaqueta",
+        "precio":"2000",
+        "descripcion":"Campera negra, de cuero, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/chaquetas/chaqueta2.jpg",
+        "id_prod":"chaqueta-hombreras"
+    },
+    {   
+        "nombre":"Campera Universitaria",
+        "categoria":"chaqueta",
+        "precio":"3000",
+        "descripcion":"Campera Universitaria, logo HD, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/chaquetas/chaqueta3.jpeg",
+        "id_prod":"campera-universitaria"
+    },
+    {   
+        "nombre":"Campera de Cuero",
+        "categoria":"chaqueta",
+        "precio":"4000",
+        "descripcion":"Campera de cuero, color negro, ideal para el invierno.",
+        "stock":"10",
+        "img":"img/chaquetas/chaqueta4.jpeg",
+        "id_prod":"chaqueta-cuero"
+    }
+]
